@@ -49,10 +49,11 @@
 	background-size: cover;
 
   text-align: center;
-  height: em(540px);
+  height: em(450px);
 
   h1 {
-    margin: 2em 0;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
     color: white;
     font-size: 3.5em;
   }
@@ -67,4 +68,16 @@
   position: relative;
 	overflow: hidden;
 	padding-bottom: 2em;
+}
+
+.image-feed {
+  img {
+		margin-bottom: 0.5em;
+		border: 1px $base-border-color solid;
+		border-radius: $base-border-radius;
+		padding: 0.5em;
+
+		width: 100% !important;
+		height: auto !important;
+	}
 }
