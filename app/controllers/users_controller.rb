@@ -8,9 +8,10 @@ class UsersController < ApplicationController
   def create
     @user = User.create(user_params)
 
-    if @user
+    if not @user.errors.any?
       redirect_to sign_in_users_path
     else
+      binding.pry
       flash[:notice] = 'Error! So sad :('
       redirect_to sign_up_users_path
     end
