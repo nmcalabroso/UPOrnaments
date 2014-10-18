@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 
   def new
+    @error = flash[:notice]
     @user = User.new
   end
 
@@ -10,7 +11,8 @@ class UsersController < ApplicationController
     if @user
       redirect_to success_users_path
     else
-      redirect_to error_users_path
+      flash[:notice] = 'Error! So sad :('
+      redirect_to sign_up_users_path
     end
   end
 
