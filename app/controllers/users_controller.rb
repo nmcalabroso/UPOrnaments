@@ -11,8 +11,7 @@ class UsersController < ApplicationController
     if not @user.errors.any?
       redirect_to sign_in_users_path
     else
-      binding.pry
-      flash[:notice] = 'Error! So sad :('
+      flash[:notice] = true
       redirect_to sign_up_users_path
     end
   end
