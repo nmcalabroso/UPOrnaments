@@ -71,6 +71,10 @@
 }
 
 .image-feed {
+  margin-top: 2em;
+  column-count: 4;
+	column-gap: 0.5em;
+
   img {
 		margin-bottom: 0.5em;
 		border: 1px $base-border-color solid;
