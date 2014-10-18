@@ -6,7 +6,12 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(user_params)
-    redirect_to success_users_path
+
+    if @user
+      redirect_to success_users_path
+    else
+      redirect_to error_users_path
+    end
   end
 
   private

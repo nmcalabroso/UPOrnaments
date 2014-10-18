@@ -4,7 +4,8 @@ Rails.application.routes.draw do
 
     collection do
       get '/sign_up', to: 'users#new', as: :sign_up
-      get '/success', to: 'users#success', as: :success
+      get '/success', to: 'static_pages#success', as: :success
+      get '/error', to: 'static_pages#error', as: :error
     end
   end
   root 'static_pages#home'
