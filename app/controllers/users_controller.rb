@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     @user = User.create(user_params)
 
     if @user
-      redirect_to success_users_path
+      redirect_to sign_in_users_path
     else
       flash[:notice] = 'Error! So sad :('
       redirect_to sign_up_users_path
