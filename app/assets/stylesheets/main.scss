@@ -1,0 +1,47 @@
+#nav-wrap {
+	position: fixed;
+	top: 0;
+
+	z-index: 1;
+
+	border-bottom: 1px rgba(black, 0.07) solid;
+	background-color: rgba(white, 0.99);
+	padding: 1em 1em;
+
+	width: 100%;
+	height: $navbar-height;
+
+	li {
+		display: block;
+		position: relative;
+		float: left;
+
+		cursor: pointer;
+
+		a {
+			margin-right: 1em;
+			color: #000000;
+			font-size: 0.85em;
+		}
+
+		&:last-child {
+			margin-right: 0em;
+		}
+	}
+
+	.logotype {
+		img {
+			height: em(28px);
+		}
+	}
+}
+
+#site-content {
+	margin-top: $navbar-height;
+}
+
+#content-wrap {
+  position: relative;
+	overflow: hidden;
+	padding-bottom: 2em;
+}

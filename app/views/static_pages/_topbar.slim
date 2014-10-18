@@ -1,1 +1,6 @@
-h1 Topbar
+nav#nav-wrap
+  = link_to image_tag('logotype.png'), '/', :class => 'logotype pull-left'
+
+  ul.pull-right
+    li = link_to 'Sign up', '#'
+    li = link_to 'Log in', '#'
